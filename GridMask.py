@@ -44,7 +44,6 @@ class Grid :
             mask[:, s:t] = 0
         
         r = np.random.randint(self.rotate)
-        r = 0
         mask = Image.fromarray(np.uint8(mask))
         mask = mask.rotate(r)
         mask = np.asarray(mask)
